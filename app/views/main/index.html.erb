@@ -2,6 +2,7 @@
 
 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 <div id="map"></div>
+<<<<<<< HEAD
   <script>
   // This example adds a search box to a map, using the Google Place Autocomplete
   // feature. People can enter geographical searches. The search box will return a
@@ -76,3 +77,17 @@
 
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=[API Key Here]&libraries=places&callback=initAutocomplete" async defer></script>
+=======
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=[API ID]&callback=initMap"
+async defer></script>
+>>>>>>> de6338bee9ab2c83208f62603f91fe93bc619b0e
